@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import "materializetwo";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    position: relative;
+    overflow-x:hidden; 
+    background-color: whitesmoke;
+}
+
+section.menu-left {
+    width: 260px;
+    height: 100vh;
+    background-image: linear-gradient(to left top, #4B34AB,rgb(53, 148, 143) 90%);
+   position: fixed;
+}
+label#logo {
+    cursor: default;
+    margin-top: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 32pt;
+    color: rgb(14, 240, 191);
+
+}
+div#item1 {
+    text-decoration: none;
+    margin-top:50px;
+  
+
+    font-family: 'Comfortaa', cursive;
+    
+    padding: 18px;
+    padding-left: 16px;
+    padding-right: 0px;
+ 
+
+    font-size: 12pt;
+    color: white;
+    
+
+    transition: all .5s;
+    text-indent: 5px;
+}
+div#item2, div#item3, div#item2b {
+
+    font-size: 12pt;
+    text-indent: 5px;
+    color: white;
+    padding: 18px;
+    margin-top: 5px;
+  
+
+    padding-left: 16px;
+    padding-right: 0px;
+    
+
+    transition: all .5s;
+
+        font-family: 'Comfortaa', cursive;
+
+
+}
+div#item2 {
+    background-image: linear-gradient(to right, transparent , rgba(26, 151, 201, 0.384));
+    margin-left: 55px;
+    cursor: pointer;
+}
+div#item1 {
+    background-image: none;
+    margin-left: 0px;
+}
+#a1, #a2, #a3, #a2b{
+    text-decoration: none;
+    color: white;
+
+    padding-top: 13px;
+    padding-bottom: 40px;
+    padding-right: 125px;
+    
+
+}
+#a1:focus, #a2:focus, #a3:focus{
+    outline-style: none;
+}
+* {
+    outline-style: none;
+}
+#a3 {
+    padding-right: 50px;
+    
+}
+ #a1 {
+    padding-right: 37px;
+}
+div#item1:hover, div#item2:hover, div#item3:hover, div#item2b:hover{
+
+    background-image: linear-gradient(to right, transparent , rgba(26, 151, 201, 0.384));
+    margin-left: 55px;
+    cursor: pointer;
+
+}
+
+#interface {
+ 
+    
+    height: 100%;
+    display: table-cell;
+}
+
+section#materias {
+    background-color: whitesmoke;
+   margin-top:-40px;
+margin-left: 260px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 78.4vw;
+ 
+       
+}
+.field {
+    color: black;
+}
+h3#bimestre {
+    margin-top: 60px;
+    text-align: center;
+   
+    font-size:16pt;
+    
+    margin-bottom: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+   
+}
+#line {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+
+}
+
+h3#titulo {
+    margin-top: 40px;
+    text-align: center;
+   
+    font-size:13pt;
+    
+    margin-bottom: 8px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300
+    
+
+
+}
+#circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background-color: #560099;
+    text-align: center;
+
+    line-height: 3.3;
+    color: cyan;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 27pt;
+    text-shadow: #484848 3px 3px 5px;
+}
+
+#circle2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background-color: #484848;
+    text-align: center;
+    font-weight: 700;
+    line-height: 2.6;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35pt;
+    
+}
+
+ul {
+    display: inline-block;
+    width: 120px;
+   
+    
+}
+ul#mensal {
+   
+   
+     margin-right: 260px;
+}
+#select {
+    width: 20%;
+}

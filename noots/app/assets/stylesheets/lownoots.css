@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Krub');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import "materialize";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    position: absolute;
+    overflow-x: hidden ;
+}
+
+section.menu-leftb {
+    position: fixed;
+    width: 260px;
+    height: 100vh;
+    background-image: linear-gradient(to left top, #4B34AB,rgb(53, 148, 143) 90%)
+}
+label#logo {
+    cursor: default;
+    margin-top: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 32pt;
+    color: rgb(14, 240, 191)
+
+}
+div#item1 {
+    text-decoration: none;
+    margin-top: 80px;
+    cursor: default;
+   
+  
+    font-family: 'Comfortaa', cursive;
+    padding-left: 16px;
+    font-size: 12pt;
+    color: white;
+    padding: 18px;
+    transition: all .5s;
+}
+div#item2, div#item3 {
+    text-decoration: none;
+    font-size: 12pt;
+    text-indent: 5px;
+    color: white;
+    padding: 18px;
+    margin-top: 5px;
+    padding-left: 16px;
+
+    transition: all .5s;
+    font-family: 'Comfortaa', cursive;
+
+
+}
+div#item3 {
+    background-image: linear-gradient(to right, transparent , rgba(26, 151, 201, 0.384));
+    margin-left: 50px;
+    cursor: pointer;
+}
+div#item2 {
+    background-image: none;
+}
+div#item2:hover, div#item3:hover, div#item1:hover{
+
+    background-image: linear-gradient(to right, transparent , rgba(26, 151, 201, 0.384));
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+
+#a2, #a3, #a1 {
+    text-decoration: none;
+    color: white;
+
+    padding-top: 13px;
+    padding-bottom: 40px;
+    padding-right: 125px;
+}
+
+#a1:focus, #a2:focus, #a3:focus{
+    outline-style: none;
+}
+#a1 {
+    padding-right: 38px;
+}
+#a3 {
+    padding-right: 66px;
+}
+section#materias {
+    background-color: whitesmoke;
+   margin-top:-40px;
+    padding-bottom: 120px;
+    padding-left: 70px;
+    margin-right: 80px;
+    padding-right: 335px;
+    width: 100vw;
+}
+
+
+
+section#materias li:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    /*box-shadow: inset 0 0 0 10px rgb(3, 124, 118);*/
+}
+
+section.interface {
+
+    position:absolute;
+    margin-left: 260px;
+    height: 100vh;
+    width: 100vw;
+}
+section#materias h1{
+    font-size: 16pt;
+    position: relative;
+    padding-top: 40px;
+    color: rgba(31, 127, 190, 0.973);
+    font-family: 'Krub', sans-serif;
+}
+
+li#piores {
+    background-color: royalblue;
+
+
+    width: 94px;
+    height: 94px;
+    border-radius: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 90px;
+    margin-left: 39px;
+    margin-right: 39px;
+    display: inline-block;
+    line-height: 127px;
+    text-align: center;
+
+    transition: all .7s;
+
+     background-repeat: no-repeat;
+background-size: 100%;
+
+}
+
+div#center {
+    background-color: transparent;
+    width: 94px;
+    height: 18px;
+    display: ruby;
+  
+}
+label {
+    color: black;
+}
+h3#media {
+    color: rgba(56, 56, 56, 0.959);
+    margin: 0px;
+    line-height: 0px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 47px;
+
+    
+}
+
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+  }
+.hvr-outline-out {
+    
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  .hvr-outline-out:before{
+    content: '';
+    position: absolute;
+    border: solid 1px;
+    border-color: rgb(0, 43, 172);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+  }
+
+
+a#show {
+    width: 94px;
+height: 94px;
+background-color: transparent;
+position: absolute;
+border-radius: 180px;
+margin-left: -47px;
+
+}
+a#show:focus {
+    outline-style: none;
+    background-color: rgb(77, 117, 235. 0.70)
+    
+}

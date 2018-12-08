@@ -1,0 +1,2 @@
+class Noot < ApplicationRecord
+end

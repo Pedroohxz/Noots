@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  materia: MyString
+  notamensal: 1.5
+  notabimestral: 1.5
+
+two:
+  materia: MyString
+  notamensal: 1.5
+  notabimestral: 1.5

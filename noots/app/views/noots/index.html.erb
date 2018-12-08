@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Notas - Noots</title>
+
+
+
+</head>
+
+<body>
+<!-- AREA DE MENU-->
+    <section class="menu-left">
+
+                <center><label id="logo">Noots</label></center>
+
+                <div id="item1" >
+                <a id="a1" href="/">Adicionar Notas</a>
+                </div>
+                <div id="item2">
+                    <a id="a2" href="/noots">Médias</a>
+                </div>
+                <div id="item3">
+                    <a id="a3" href="/lownoots">Piores Notas</a>
+                </div>
+        </section>
+
+<section id="interface">
+       <section id="materias" >
+       
+<h1>Notas por Bimestre</h1>
+       <table>
+         <thead>
+           <tr>
+             <th>Materia</th>
+             <th><center>Nota mensal</center></th>
+             <th><center>Nota bimestral</center></th>
+             
+        
+    <th id="select">
+  
+    <%= form_tag(noots_path, method: :get) do %>
+    <%= select_tag "search", options_for_select(["Bimestre", "1º Bimestre", "2º Bimestre", "3º Bimestre", "4º Bimestre"]), 
+    { value: @noots, onchange: 'this.form.submit();' } %>
+    <% end %>
+    
+   
+    
+  
+
+  </th>
+
+  
+             <th colspan="3"></th>
+           </tr>
+         </thead>
+
+         <tbody>
+           <% @noots.each do |noot| %>
+             <tr>
+               <td><%= noot.materia %></td>
+               <td><center><%= noot.nota_mensal %></center></td>
+               <td><center><%= noot.nota_bimestral %></center></td>
+            
+             
+               <td><center><%= noot.bimestre %></center></td>
+           
+               <td><%= link_to 'Média', noot %></td>
+               <td><%= link_to 'Editar', edit_noot_path(noot) %></td>
+               <td><%= link_to 'Destruir', noot, method: :delete, data: { confirm: 'Tem Certeza?' } %></td>
+             </tr>
+           <% end %>
+         </tbody>
+       </table>
+
+       <br>
+
+       <%= link_to 'Nova Nota', materias_path %>
+
+
+
+       
+
+      </section>
+    </section>
+  </body>
+</html>

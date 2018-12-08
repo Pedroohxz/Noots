@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- AREA DE MENU-->
+<section class="menu-left">
+
+            <center><label id="logo">Noots</label></center>
+
+            <div id="item1" >
+            <a id="a1" href="/">Adicionar Notas</a>
+            </div>
+            <div id="item2b">
+                <a id="a2b" href="/noots"> Médias </a>
+            </div>
+            <div id="item3">
+                <a id="a3" href="/lownoots">Piores Notas</a>
+            </div>
+    </section>
+
+
+   <section id="materias" >
+<center><h1>
+
+  <%= @noot.materia %>
+
+</h1></center>
+
+
+  <h3 id="bimestre"><%= @noot.bimestre %>º Bimestre</h3>
+  <center><div id="line"></div></center>
+
+  
+
+
+<center>
+<ul id="mensal">
+  <li>
+    <h3 id="titulo">Nota Mensal</h3>
+      <p id="circle">
+        <%= @noot.nota_mensal %>
+      <p>
+  </li>
+</ul>
+
+<ul id="bimestral">
+  <li>
+  <h3 id="titulo">Nota Bimestral</h3>
+  <p id="circle">
+    <%= @noot.nota_bimestral %>
+    <p>
+  </li>
+</ul>
+</center>
+
+<center>
+<ul id="Média">
+  <li>
+  <h3 id="titulo">Média</h3>
+  <p id="circle2">
+    <%= (@noot.nota_mensal + @noot.nota_bimestral) / 2%>
+    <p>
+  </li>
+</ul>
+</center>
+
+
+<br>
+<center>
+<%= link_to 'Edit', edit_noot_path(@noot) %> |
+<%= link_to 'Back', noots_path %>
+</center>
+
+</body>
+</html>

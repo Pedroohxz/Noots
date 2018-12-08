@@ -1,0 +1,37 @@
+<%= form_with(model: noot, local: true) do |form| %>
+  <% if noot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(noot.errors.count, "error") %> prohibited this noot from being saved:</h2>
+
+      <ul>
+      <% noot.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :materia %>
+    <%= form.text_field :materia, id: :noot_materia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nota_mensal %>
+    <%= form.text_field :nota_mensal, id: :noot_nota_mensal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nota_bimestral %>
+    <%= form.text_field :nota_bimestral, id: :noot_nota_bimestral %>
+  </div>
+
+  <div class="field">
+  <%= form.label :bimestre %>
+  <%= form.text_field :bimestre, id: :noot_bimestre %>
+</div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

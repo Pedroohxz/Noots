@@ -1,0 +1,2 @@
+module NootsHelper
+end

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Máterias - Noots</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+        $('#m1').mouseover(function() {
+            $('head').append('<style>.hvr-outline2-out:before{border-color:#CC4521;}</style>');
+
+            var valor1 = $("#m1").text();
+           $("#noot_materia").val(valor1);
+          
+         });
+        $('#m2').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#9C6E01;}</style>');
+
+            var valor1 = $("#m2").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m3').mouseover(function() {
+            $('head').append('<style>.hvr-outline2-out:before{border-color:#6C0863;}</style>');
+
+            var valor1 = $("#m3").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m4').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#00C8C6;}</style>');
+
+            var valor1 = $("#m4").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m5').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#7FC8F1;}</style>');
+            var valor1 = $("#m5").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m6').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#5DDDD3;}</style>');
+
+            var valor1 = $("#m6").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m7').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#00A5A9;}</style>');
+
+            var valor1 = $("#m7").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m8').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#E48BFF;}</style>');
+
+            var valor1 = $("#m8").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m9').mouseover(function() {
+            $('head').append('<style>.hvr-outline2-out:before{border-color:#000000;}</style>');
+            
+            var valor1 = $("#m9").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m10').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#00B0FF;}</style>');
+
+            var valor1 = $("#m10").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m11').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#86DAF1;}</style>');
+
+            var valor1 = $("#m11").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m12').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#99ABFF;}</style>');
+
+            var valor1 = $("#m12").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m13').mouseover(function() {
+            $('head').append('<style>.hvr-outline2-out:before{border-color:#C60A1E;}</style>');
+            var valor1 = $("#m13").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m14').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#43AB5F;}</style>');
+            var valor1 = $("#m14").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m15').mouseover(function() {
+            $('head').append('<style>.hvr-outline2-out:before{border-color:#F71C55;}</style>');
+            var valor1 = $("#m15").text();
+            $("#noot_materia").val(valor1);
+        });
+        $('#m16').mouseover(function() {
+            $('head').append('<style>.hvr-outline-out:before{border-color:#FF757C;}</style>');
+            var valor1 = $("#m16").text();
+            $("#noot_materia").val(valor1);
+        });
+
+
+
+
+
+
+        });
+        document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>');
+        </script>
+
+        <!--Let browser know website is optimized for mobile-->
+
+</head>
+
+<body>
+
+    <!-- AREA DE MENU-->
+    <section class="menu-leftb">
+
+                <center><label id="logo">Noots</label></center>
+
+                <div id="item1">
+                <a id="a1" href="/materias">Adicionar Notas</a>
+                </div>
+                <div id="item2">
+                    <a id="a2" href="/noots">Médias</a>
+                </div>
+                <div id="item3">
+                    <a id="a3" href="/lownoots">Piores Notas</a>
+                </div>
+
+
+
+
+    </section>
+
+<section class="interface">
+   <section id="materias">
+
+      <center><h1>Piores Notas (MÉDIAS)</h1></center>
+
+      <ul id="pioresMain">
+        <center>
+            <% @nootas.each do |nota| %>
+            <li id="piores" class="hvr-outline-out" action="nota.edit">
+              <%= link_to '', nota , id:"show" %> 
+              <h3 id="media"> <%= (nota.nota_mensal + nota.nota_bimestral) /2 %> </h3>
+            <div id="center">
+              <label><%= nota.materia %></label>
+            </div>
+                 
+            </li>
+
+               <% end %>
+          </center>
+      </ul>
+ 
+        </section>
+</section>
+</body>
+</html>
